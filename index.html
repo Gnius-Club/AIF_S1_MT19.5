@@ -1,24 +1,285 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 19.5: Taller de Diseño Inclusivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 19.5: Taller de Diseño Inclusivo</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes practiquen intensivamente el rediseño de un objeto para múltiples escenarios de accesibilidad.</li>
+                                        <li>Que consoliden su habilidad para traducir problemas de usuario en características de diseño concretas.</li>
+                                        <li>Que practiquen la resolución de conflictos de diseño y la síntesis de soluciones.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Una versión final (boceto o modelo 3D base modificado) de un control remoto que intenta sintetizar las mejores soluciones para los tres perfiles de usuario.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno (opcional, pueden trabajar en papel).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Papel y lápices para bocetar.</li>
+                                        <li>Un modelo 3D base de un control remoto estándar (opcional, para modificar).</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que Xolo está operativo.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender los 3 perfiles de usuario y los conflictos potenciales entre sus soluciones (ej. botones más grandes vs. menos botones).</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener una imagen clara de un control remoto de TV estándar y mal diseñado. Tener listo el modelo 3D base si se va a utilizar.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como un "sprint" de rediseño para abordar la complejidad y contradicciones del diseño inclusivo real.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta el desafío de diseñar para múltiples necesidades, a veces conflictivas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos, diseñadores inclusivos. En la sesión anterior, resolvieron para un escenario. Pero la diversidad humana es vasta. Un diseño verdaderamente inclusivo a menudo debe considerar múltiples necesidades, a veces contradictorias. Hoy, su taller consiste en un 'sprint' de rediseño. Se enfrentarán a varios perfiles de usuario y deberán encontrar soluciones elegantes y efectivas para cada uno.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo: 'Hola Xolo, listo para la Misión 19.5', seguido de su nombre, perfil y gustos. Esperen su confirmación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Presentar el objeto de rediseño y el desafío multi-escenario.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando el Desafío Multi-escenario ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el control remoto estándar y el desafío de rediseñarlo tres veces.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Tomaremos un único objeto de partida: un control remoto de televisión estándar. Es un objeto que todos conocemos y que a menudo está muy mal diseñado. Su desafío no es rediseñarlo una vez, sino tres veces, cada una para un perfil de usuario diferente que Xolo les presentará. No necesitan hacer un modelo 3D completo para cada uno; el objetivo es el boceto conceptual y la modificación de características clave.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de este taller es la agilidad. Al final, podrán decir: <strong>'Yo puedo analizar múltiples escenarios de accesibilidad y proponer e implementar rápidamente soluciones de diseño específicas para cada uno, demostrando mi agilidad como diseñador inclusivo.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Presentación de Perfiles de Usuario) ⏰ 10 minutos</h2>
+                <p>Fase de diálogo donde Xolo presenta los tres perfiles de usuario y el reto de encontrar un equilibrio.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Los Perfiles y el 'Índice de Dolor' ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador verbaliza los tres perfiles de usuario y sus problemas, simulando a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entremos al A.I. GYM. Xolo les presentará tres perfiles de usuario. Para cada uno, les dará el 'Índice de Dolor' que genera el control remoto estándar. **Perfil 1: Usuario con Baja Visión**, Índice 9/10 por falta de contraste y tamaño. **Perfil 2: Usuario con temblor esencial**, Índice 8/10 por botones pequeños y juntos. **Perfil 3: Usuario sordo**, Índice 7/10 por falta de feedback táctil o visual.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: El Reto del Conflicto ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador plantea el reto de la negociación y el compromiso en el diseño.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, el reto de Xolo: ¿cómo resolverían estos tres problemas? Noten que algunas soluciones pueden entrar en conflicto. Botones más grandes para el Perfil 2 podrían significar menos botones en total. Su rol como diseñadores es negociar estos compromisos para encontrar una solución elegante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Sprint de Rediseño Inclusivo) ⏰ 22 minutos</h2>
+                <p>Fase de trabajo práctico rápido donde los estudiantes iteran sobre su diseño para cada uno de los tres perfiles.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Sprint de Rediseño Multi-escenario ⏰ 22 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes pasan por las tres fases de rediseño, sintetizando al final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Es un sprint de 22 minutos. Dividan su tiempo. **Fase 1:** Rediseñen para Baja Visión (contraste, tamaño). **Fase 2:** Adapten su diseño para Temblor Esencial (espaciado, botones hundidos). **Fase 3:** Integren soluciones de feedback táctil o visual. Al final, intenten **sintetizar** las mejores soluciones en un diseño "universal" final. Boceten o modifiquen su modelo base. ¡Comiencen!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final de "Galería de Soluciones" donde los equipos explican cómo abordaron cada desafío y resolvieron los conflictos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una reflexión sobre la resolución de conflictos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su diseño final "universal". Reflexionen: <strong>¿Cómo resolvieron los conflictos entre las diferentes necesidades? ¿Qué solución para un perfil benefició también a los otros? ¿Tuvieron que hacer algún sacrificio?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Galería de Soluciones) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes comparten sus diseños finales, explicando cómo sintetizaron las soluciones.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, es la "Galería de Soluciones". Muestren su diseño final. Expliquen cómo abordaron cada desafío y, lo más importante, cómo resolvieron los conflictos entre las necesidades para llegar a una solución universal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador consolida la sesión, enfatizando el diseño como un acto de equilibrio y empatía creativa.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Han experimentado la verdadera complejidad y belleza del Diseño Inclusivo. No es una checklist; es un acto de equilibrio y empatía creativa. Han demostrado que pueden pensar de forma ágil y multimodal para resolver una variedad de necesidades humanas. Esta habilidad para diseñar no para un 'usuario', sino para 'usuarios' en plural, es lo que define a un diseñador maduro y responsable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
